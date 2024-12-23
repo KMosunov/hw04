@@ -12,7 +12,6 @@ class Car {
     }
 }
 
-const car = new Car('Toyota', 100)
-console.log("Скорость до ускорения: " + car.speed)
-car.accelerate(20)
-console.log("Скорость после ускорения: " + car.speed)// After fixing: will print 120
+const car = new Car('Toyota', 100);
+car.accelerate(20);
+console.log("Скорость после ускорения: " + car.speed);// After fixing: will print 120
