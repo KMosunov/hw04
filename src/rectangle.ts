@@ -1,16 +1,9 @@
 class Rectangle {
-    width: number
-    height: number
 
-    constructor(width: number, height: number) {
-        this.Width = width
-        this.Height = height
-    }
-
-    getArea(): number {
+    getArea(width:number, height:number): number {
         return width * height
     }
 }
 
-const rect = new Rectangle(5, 10)
-console.log(rect.getArea()) // After fixing: will print 50
+const rect = new Rectangle()
+console.log(rect.getArea(5,10)) // After fixing: will print 50
